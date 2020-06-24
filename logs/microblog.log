@@ -1,0 +1,99 @@
+2020-06-14 09:37:45,615 ERROR: Exception on /auth/reset_password/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzd29yZCI6NCwiZXhwIjoxNTkyMTA4MjM3LjUzODQ0NDV9.EjL2d0aA-syGqJpdy8eurTBiPWdXS2-XTZHp4fto4sE [GET] [in c:\python\python37\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\python\python37\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python\python37\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python\python37\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\python37\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\python37\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python\python37\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Flask\microblog\app\auth\routes.py", line 118, in reset_password
+    return render_template('auth/reset_password.html', form=form)
+  File "c:\python\python37\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\python\python37\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\python\python37\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\python\python37\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\python\python37\lib\site-packages\jinja2\loaders.py", line 117, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\python\python37\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\python\python37\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: auth/reset_password.html
+2020-06-14 09:38:20,526 ERROR: Exception on /auth/reset_password/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzd29yZCI6NCwiZXhwIjoxNTkyMTA4MjM3LjUzODQ0NDV9.EjL2d0aA-syGqJpdy8eurTBiPWdXS2-XTZHp4fto4sE [GET] [in c:\python\python37\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\python\python37\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python\python37\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python\python37\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\python37\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\python37\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python\python37\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Flask\microblog\app\auth\routes.py", line 118, in reset_password
+    return render_template('auth/reset_password.html', form=form)
+  File "c:\python\python37\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\python\python37\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\python\python37\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\python\python37\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\python\python37\lib\site-packages\jinja2\loaders.py", line 117, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\python\python37\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\python\python37\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: auth/reset_password.html
+2020-06-14 10:02:04,248 INFO: Microblog startup [in E:\Flask\microblog\app\__init__.py:85]
+2020-06-14 10:03:49,981 ERROR: Exception on /auth/reset_password/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzd29yZCI6NCwiZXhwIjoxNTkyMTA5NzkzLjU3NjI5Njh9.gs1-76cDLp-79oPg4rLv1uOSsDaiIoG1yvcD3DUbbhE [GET] [in c:\python\python37\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\python\python37\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python\python37\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python\python37\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\python37\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\python37\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python\python37\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Flask\microblog\app\auth\routes.py", line 118, in reset_password
+    return render_template('auth/reset_password.html', form=form)
+  File "c:\python\python37\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\python\python37\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\python\python37\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\python\python37\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\python\python37\lib\site-packages\jinja2\loaders.py", line 117, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\python\python37\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\python\python37\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: auth/reset_password.html
+2020-06-14 10:16:19,113 INFO: Microblog startup [in E:\Flask\microblog\app\__init__.py:85]
+2020-06-14 10:33:55,601 INFO: Microblog startup [in E:\Flask\microblog\app\__init__.py:85]
+2020-06-16 06:59:06,284 INFO: Microblog startup [in E:\Flask\microblog\app\__init__.py:85]
+2020-06-21 21:27:47,770 INFO: Microblog startup [in E:\Flask\microblog\app\__init__.py:85]
+2020-06-24 09:20:04,495 INFO: Microblog startup [in E:\Flask\microblog\app\__init__.py:85]
